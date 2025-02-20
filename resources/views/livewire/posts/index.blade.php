@@ -1,3 +1,5 @@
-<div>
-    Index: The whole world belongs to you.
+<div class="row">
+    <div class="col-md-6">
+        <livewire:posts.create/>
+    </div>
 </div>
