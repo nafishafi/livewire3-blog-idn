@@ -10,7 +10,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/contact', \App\Livewire\Contact::class)->name('contact');
 
-    Route::get('posts', \App\Livewire\Posts\Index::class)->name('posts.index');
+    Route::get('/timeline', \App\Livewire\Timeline::class)->name('timeline');
 
     Route::get('users/{user}', \App\Livewire\Users\Show::class)->name('users.show');
 });
