@@ -11,6 +11,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/contact', \App\Livewire\Contact::class)->name('contact');
 
     Route::get('/timeline', \App\Livewire\Timeline::class)->name('timeline');
+    
+    Route::get('users', \App\Livewire\Users\Index::class)->name('users.index');
 
     Route::get('users/{user}', \App\Livewire\Users\Show::class)->name('users.show');
 });
